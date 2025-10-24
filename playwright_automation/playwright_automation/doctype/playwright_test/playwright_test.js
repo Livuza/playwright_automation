@@ -10,7 +10,7 @@ frappe.ui.form.on("Playwright Test", {
             }
 
             frappe.call({
-                method: "playwright.playwright.doctype.playwright_test.playwright_test.run_login",
+                method: "playwright_automation.playwright_automation.doctype.playwright_test.playwright_test.run_login",
                 args: { docname: frm.doc.name },
                 freeze: true,
                 freeze_message: "Running Playwright test...",
